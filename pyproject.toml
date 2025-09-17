@@ -1,0 +1,39 @@
+[project]
+name = "oliva_multi_agent"
+version = "0.1.0"
+description = "Oliva Multi-Agent Assistant"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name = "GeraDeluxer", email = "gerardoangeln@gmail.com"}
+]
+dependencies = [
+    "aiofile",
+    "livekit-agents",
+    "livekit-agents>=0.12.12,<0.13",
+    "livekit-plugins-deepgram>=0.6.19,<0.7",
+    "livekit-plugins-openai>=0.10.19,<0.11",
+    "livekit-plugins-silero>=0.7.4,<0.8",
+    "livekit-plugins-elevenlabs",
+    "langgraph>=0.2.71,<0.3",
+    "langchain-core>=0.3.34,<0.4",
+    "python-dotenv>=1.0.1,<2",
+    "python-dotenv",
+    "loguru>=0.7.3",
+    "pydantic>=2,<3",
+    "pydantic-settings>=2.6.1",
+    "superlinked==17.1.0",
+    "langchain>=0.3.0",
+    "langchain-community>=0.0.10",
+    "langchain-openai>=0.3.10",
+    "langchainhub>=0.1.14",
+    "langchain-text-splitters>=0.0.1",
+    "chromadb",
+    "tiktoken",
+    "langchain-qdrant",
+    "qdrant-client",
+    "beautifulsoup4",
+]
+
+[tool.setuptools]
+packages = ["app", "data", "assets", "use_cases"]
